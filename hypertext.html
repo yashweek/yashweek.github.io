@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta Charset="UTF-8">
+        <title>Final Price Calculator</title>
+        <!--Milan Sheth-->
+        
+    </head>
+    <body>
+        <h1>Final Price Calculator</h1>
+        
+         <script>
+            var TVPrice=Number(prompt("Enter TV Set Price"));
+            var SoundBarPrice=Number(prompt("Enter Sound Bar Price"));
+            var Residence=prompt("Enter Place of Residence");
+             if(Residence.toUpperCase()=="NJ"){
+                var TotalCost=(TVPrice + SoundBarPrice)*1.06625;
+            alert("The final price is $" + TotalCost.toFixed(2));
+            }
+            else if(Residence.toUpperCase()=="NYC"){
+                var TotalCost=(TVPrice + SoundBarPrice)*1.08875;
+            alert("The final price is $" + TotalCost.toFixed(2));
+            }
+            else if(Residence.toUpperCase()=="NYS"){
+                var TotalCost=(TVPrice + SoundBarPrice)*1.04375;
+            alert("The final price is $" + TotalCost.toFixed(2));
+            }
+            else{
+            alert("Invalid Residence");
+            }
+        </script>
+           
+    </body>
+</html>
